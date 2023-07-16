@@ -10,7 +10,14 @@ const getAllMovements = async (req, res) => {
 
 const getAllDeudas = async (req, res) => {
     try {
-        res.json(movements.deudas);
+        switch (req.query.orderByTotal) {
+            case 'menor':
+                return res.json(movements.deudas.sort((a, b) => a.total - b.total));
+            case 'mayor':
+                return res.json(movements.deudas.sort((a, b) => b.total - a.total));
+            default:
+                return res.json(movements.deudas);
+        }
     } catch (error) {
         console.error(error);
     }

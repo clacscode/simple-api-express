@@ -17,6 +17,24 @@ export const movements = {
             "total": 100,
             "cuotas": 1,
             "valorCuota": 100
+        },
+        {
+            "id": 3,
+            "descripcion": "Deuda 3",
+            "rutDeudor": "0-0",
+            "rutAcreedor": "1-1",
+            "total": 990,
+            "cuotas": 6,
+            "valorCuota": 165
+        },
+        {
+            "id": 4,
+            "descripcion": "Deuda 4",
+            "rutDeudor": "0-0",
+            "rutAcreedor": "1-1",
+            "total": 70,
+            "cuotas": 2,
+            "valorCuota": 35
         }
     ],
     "prestamos": [
